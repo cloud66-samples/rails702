@@ -1,1 +1,1 @@
-custom_web: bundle exec puma -e $RACK_ENV -b unix:///tmp/web_server.sock --pidfile /tmp/web_server.pid --dir $STACK_PATH
+custom_web: bundle exec puma -e $RACK_ENV -b unix:///tmp/web_server.sock --pidfile /tmp/web_server.pid --dir $STACK_PATH -w 2
