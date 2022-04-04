@@ -1,8 +1,8 @@
 rails:
   configuration:
     node_version: 16
-    health:
-      endpoint: "/health_check"
-      accept:
-      - '200'
-      timeout: 15    
+#    health:
+#      endpoint: "/health_check"
+#      accept:
+#      - '200'
+#      timeout: 15    
