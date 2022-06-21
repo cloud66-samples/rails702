@@ -1,4 +1,6 @@
 rails:
   configuration:
     node_version: 16
-mysql: external
+mysql: 
+  default:
+    servers: external
