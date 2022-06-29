@@ -1,7 +1,7 @@
 rails:
   configuration:
     node_version: 16
-    vpc_id: vpc-020b1206969332264
+    vpc_id: vic-vpc
 #    health:
 #      endpoint: "/health_check"
 #      accept:
