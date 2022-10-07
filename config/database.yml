@@ -13,10 +13,8 @@ default: &default
   adapter: mysql2
   encoding: utf8mb4
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  username: root
-  password:
-  host: 127.0.0.1
-  database: rails702
+  username: postgres
+  password: password
 
 development:
   <<: *default
@@ -50,7 +48,6 @@ test:
 #
 production:
   <<: *default
-  database: <%= ENV['MYSQL_DATABASE'] %>
-  username: <%= ENV['MYSQL_USERNAME'] %>
-  password: <%= ENV['MYSQL_PASSWORD'] %>
-  host: <%= ENV['MYSQL_ADDRESS'] || ENV['MYSQL_HOST'] %>
+  database: qunli_production
+  username: qunli
+  password: <%= ENV["QUNLI_DATABASE_PASSWORD"] %>
