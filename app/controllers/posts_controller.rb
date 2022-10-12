@@ -1,6 +1,7 @@
 class PostsController < ApplicationController
   def index
     @posts = Post.all
+    @remote_ip = request.remote_ip
   end
 
   def new
