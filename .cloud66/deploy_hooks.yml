@@ -1,0 +1,4 @@
+first_thing:
+- command: ls -la /
+  target: any
+  execute: true
