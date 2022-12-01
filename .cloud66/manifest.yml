@@ -6,3 +6,6 @@ rails:
 #      accept:
 #      - '200'
 #      timeout: 15    
+postgresql:
+  configuration:
+    version: "15"
