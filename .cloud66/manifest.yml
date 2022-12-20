@@ -1,5 +1,6 @@
 rails:
   configuration:
+    operating_system: ubuntu2004
     node_version: 16
 #    health:
 #      endpoint: "/health_check"
