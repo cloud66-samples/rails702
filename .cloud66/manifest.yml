@@ -2,6 +2,7 @@ rails:
   configuration:
     node_version: 16
     ruby_version: 3.1.2
+    operating_system: ubuntu2004
 #    health:
 #      endpoint: "/health_check"
 #      accept:
