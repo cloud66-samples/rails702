@@ -50,7 +50,7 @@ test:
 #
 production:
   <<: *default
-  database: <%= ENV['MYSQL_DATABASE'] %>
+  database: rails702_<%= Rails.env %>
   username: <%= ENV['MYSQL_USERNAME'] %>
   password: <%= Rails.application.credentials.dig(:advertising_db_production, :user) %>
   host: <%= ENV['MYSQL_ADDRESS'] || ENV['MYSQL_HOST'] %>
