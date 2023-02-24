@@ -1,5 +1,6 @@
 rails:
   configuration:
+    ruby_version: "3.2.1"
     node_version: 16
 #    health:
 #      endpoint: "/health_check"
