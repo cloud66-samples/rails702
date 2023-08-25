@@ -7,5 +7,5 @@ rails:
 #      - '200'
 #      timeout: 15    
 gateway:
-  name: <%= FOO %>
+  name: <%= ENV["FOO"] %>
   username: banana
