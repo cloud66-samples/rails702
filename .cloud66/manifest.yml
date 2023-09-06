@@ -1,5 +1,4 @@
 rails:
   configuration:
     node_version: 16
-    ruby_version: <%= ENV["RUBY_VERSION"] %>
-    iam_instance_profile_name: $IAM_INSTANCE_PROFILE_NAME
+    iam_instance_profile_name: $(IAM_INSTANCE_PROFILE_NAME)
