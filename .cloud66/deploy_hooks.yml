@@ -2,3 +2,7 @@ first_thing:
 - command: ls -la /
   target: any
   execute: true
+before_restart:
+- command: ls -la /
+  target: any
+  execute: true
