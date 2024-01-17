@@ -1,4 +1,4 @@
 first_thing:
-- command: ls -la /
+- command: ls -la /test
   target: any
   execute: true
