@@ -1,8 +1,30 @@
 rails:
   configuration:
     node_version: 16
-#    health:
-#      endpoint: "/health_check"
-#      accept:
-#      - '200'
-#      timeout: 15    
+  servers:
+  - server:
+      unique_name: web1
+      vendor: aws
+      key_name: development
+      region: "eu-west-2"
+      size: "t3a.small"
+  - server:
+      unique_name: web2
+      vendor: aws
+      key_name: development
+      region: "eu-west-2"
+      size: "t3a.small"    
+mysql:
+  servers:
+  - server:
+      unique_name: db1
+      vendor: aws
+      key_name: development
+      region: "eu-west-2"
+      size: "t3a.small"
+  - server:
+      unique_name: db2
+      vendor: aws
+      key_name: development
+      region: "eu-west-2"
+      size: "t3a.small"  
