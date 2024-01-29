@@ -15,16 +15,46 @@ rails:
       region: "eu-west-2"
       size: "t3a.small"    
 mysql:
-  servers:
-  - server:
-      unique_name: db1
-      vendor: aws
-      key_name: development
-      region: "eu-west-2"
-      size: "t3a.small"
-  - server:
-      unique_name: db2
-      vendor: aws
-      key_name: development
-      region: "eu-west-2"
-      size: "t3a.small"  
+  groups:
+    default: 
+      servers:
+      - server:
+          unique_name: db1
+          vendor: aws
+          key_name: development
+          region: "eu-west-2"
+          size: "t3a.small"
+      - server:
+          unique_name: db2
+          vendor: aws
+          key_name: development
+          region: "eu-west-2"
+          size: "t3a.small"  
+    banana: 
+      servers:
+      - server:
+          unique_name: db3
+          vendor: aws
+          key_name: development
+          region: "eu-west-2"
+          size: "t3a.medium"
+      - server:
+          unique_name: db4
+          vendor: aws
+          key_name: development
+          region: "eu-west-2"
+          size: "t3a.small"            
+    tree: 
+      servers:
+      - server:
+          unique_name: db5
+          vendor: aws
+          key_name: development
+          region: "eu-west-2"
+          size: "t3a.medium"
+      - server:
+          unique_name: db6
+          vendor: aws
+          key_name: development
+          region: "eu-west-2"
+          size: "t3a.large"                      
