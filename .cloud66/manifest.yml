@@ -5,13 +5,13 @@ rails:
   - server:
       unique_name: web1
       vendor: aws
-      key_name: development
+      key_name: Images
       region: "eu-west-2"
       size: "t3a.small"
   - server:
       unique_name: web2
       vendor: aws
-      key_name: development
+      key_name: Images
       region: "eu-west-2"
       size: "t3a.small"    
 mysql:
@@ -19,12 +19,12 @@ mysql:
   - server:
       unique_name: db1
       vendor: aws
-      key_name: development
+      key_name: Images
       region: "eu-west-2"
       size: "t3a.small"
   - server:
       unique_name: db2
       vendor: aws
-      key_name: development
+      key_name: Images
       region: "eu-west-2"
       size: "t3a.small"  
