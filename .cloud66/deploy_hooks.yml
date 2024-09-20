@@ -5,4 +5,5 @@ before_haproxy:
 after_haproxy:
 - command: ls -la /
   target: any
+  name: banana
   execute: true  
