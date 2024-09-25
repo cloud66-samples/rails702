@@ -9,3 +9,14 @@ before_haproxy:
   destination: /tmp/test.yml
   target: any
   execute: true
+after_haproxy:
+- name: source3
+  source: .cloud66/deploy_hooks.yml
+  destination: /tmp/test.yml
+  target: any
+  execute: false
+- name: source4
+  source: .cloud66/test.sh
+  destination: /tmp/test.yml
+  target: any
+  execute: true
