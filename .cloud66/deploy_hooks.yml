@@ -5,7 +5,7 @@ before_haproxy:
   target: any
   execute: false
 - name: source2
-  source: .cloud66/deploy_hooks.yml
+  source: .cloud66/test.sh
   destination: /tmp/test.yml
   target: any
-  execute: false
+  execute: true
