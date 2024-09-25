@@ -1,9 +1,11 @@
 before_haproxy:
-- command: ls -la /
+- name: source1
+  source: .cloud66/deploy_hooks.yml
+  destination: /tmp/test.yml
   target: any
-  execute: true
-after_haproxy:
-- command: ls -la /
+  execute: false
+- name: source2
+  source: .cloud66/deploy_hooks.yml
+  destination: /tmp/test.yml
   target: any
-  name: banana
-  execute: true  
+  execute: false
