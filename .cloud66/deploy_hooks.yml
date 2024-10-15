@@ -1,4 +1,25 @@
 first_thing:
-- command: ls -la /
+- name: first thing
+  command: env | sort | grep CLOUD66 
+  target: any
+  execute: true
+after_checkout:
+- name: after checkout
+  command: env | sort | grep CLOUD66 
+  target: any
+  execute: true
+after_bundle:
+- name: after bundle
+  command: env | sort | grep CLOUD66 
+  target: any
+  execute: true
+after_rails:
+- name: after rails
+  command: env | sort | grep CLOUD66 
+  target: any
+  execute: true
+last_thing:
+- name: last thing
+  command: env | sort | grep CLOUD66 
   target: any
   execute: true
